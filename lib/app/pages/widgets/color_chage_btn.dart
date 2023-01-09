@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio2/app/core/color/colors.dart';
-import 'package:portfolio2/app/core/color/gradient_colors.dart';
-import 'package:portfolio2/app/core/configs/configs.dart';
-import 'package:portfolio2/app/core/responsive/responsive.dart';
+import 'package:portfolio/app/core/color/colors.dart';
+import 'package:portfolio/app/core/color/gradient_colors.dart';
+import 'package:portfolio/app/core/configs/configs.dart';
+import 'package:portfolio/app/core/responsive/responsive.dart';
 
 class ColorChageButton extends StatelessWidget {
   final String text;

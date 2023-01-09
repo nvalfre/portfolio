@@ -1,19 +1,18 @@
-
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:portfolio2/app/config/links.dart';
-import 'package:portfolio2/app/core/configs/app.dart';
-import 'package:portfolio2/app/core/configs/configs.dart';
-import 'package:portfolio2/app/core/responsive/responsive.dart';
-import 'package:portfolio2/app/core/theme/cubit/theme_cubit.dart';
-import 'package:portfolio2/app/pages/sections/main/configs.dart';
-import 'package:portfolio2/app/pages/widgets/color_chage_btn.dart';
-import 'package:portfolio2/app/pages/widgets/navbar_actions_button.dart';
-import 'package:portfolio2/app/pages/widgets/navbar_logo.dart';
-import 'package:portfolio2/app/providers/presenter_provider.dart';
-import 'package:portfolio2/app/providers/scroll_provider.dart';
+import 'package:portfolio/app/config/links.dart';
+import 'package:portfolio/app/core/configs/app.dart';
+import 'package:portfolio/app/core/configs/configs.dart';
+import 'package:portfolio/app/core/responsive/responsive.dart';
+import 'package:portfolio/app/core/theme/cubit/theme_cubit.dart';
+import 'package:portfolio/app/pages/sections/main/configs.dart';
+import 'package:portfolio/app/pages/widgets/color_chage_btn.dart';
+import 'package:portfolio/app/pages/widgets/navbar_actions_button.dart';
+import 'package:portfolio/app/pages/widgets/navbar_logo.dart';
+import 'package:portfolio/app/providers/presenter_provider.dart';
+import 'package:portfolio/app/providers/scroll_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
-import 'package:portfolio2/app/core/util/constants.dart';
+import 'package:portfolio/app/core/util/constants.dart';
 import 'package:sizer/sizer.dart';
 import 'package:intl/intl.dart';
 

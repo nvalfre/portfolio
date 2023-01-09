@@ -1,5 +1,5 @@
-import 'package:portfolio2/app/config/links.dart';
-import 'package:portfolio2/app/domain/contact_social_media.dart';
+import 'package:portfolio/app/config/links.dart';
+import 'package:portfolio/app/domain/contact_social_media.dart';
 
 const String textButton = 'wa.me';
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio2/app/config/links.dart';
-import 'package:portfolio2/app/core/util/constants.dart';
+import 'package:portfolio/app/config/links.dart';
+import 'package:portfolio/app/core/util/constants.dart';
 
 class Footer extends StatelessWidget {
   const Footer({Key? key}) : super(key: key);

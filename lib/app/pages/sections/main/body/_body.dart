@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:portfolio2/app/providers/scroll_provider.dart';
+import 'package:portfolio/app/providers/scroll_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 

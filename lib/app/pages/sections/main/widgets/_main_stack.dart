@@ -1,12 +1,10 @@
-
-
 import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:portfolio2/app/core/color/colors.dart';
-import 'package:portfolio2/app/pages/sections/main/body/_body.dart';
-import 'package:portfolio2/app/pages/widgets/arrow_on_top.dart';
+import 'package:portfolio/app/core/color/colors.dart';
+import 'package:portfolio/app/pages/sections/main/body/_body.dart';
+import 'package:portfolio/app/pages/widgets/arrow_on_top.dart';
 
 import '_background.dart';
 

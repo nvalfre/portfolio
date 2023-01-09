@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_initicon/flutter_initicon.dart';
-import 'package:portfolio2/app/core/configs/configs.dart';
-import 'package:portfolio2/app/core/responsive/responsive.dart';
+import 'package:portfolio/app/core/configs/configs.dart';
+import 'package:portfolio/app/core/responsive/responsive.dart';
 
 class NavBarLogo extends StatelessWidget {
   const NavBarLogo({Key? key}) : super(key: key);

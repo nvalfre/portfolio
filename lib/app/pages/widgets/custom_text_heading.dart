@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio2/app/core/configs/configs.dart';
-import 'package:portfolio2/app/core/responsive/responsive.dart';
+import 'package:portfolio/app/core/configs/configs.dart';
+import 'package:portfolio/app/core/responsive/responsive.dart';
 
 class CustomSectionHeading extends StatelessWidget {
   final String text;

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio2/app/core/animations/entrance_fader.dart';
-import 'package:portfolio2/app/core/color/gradient_colors.dart';
-import 'package:portfolio2/app/core/configs/configs.dart';
-import 'package:portfolio2/app/providers/scroll_provider.dart';
+import 'package:portfolio/app/core/animations/entrance_fader.dart';
+import 'package:portfolio/app/core/color/gradient_colors.dart';
+import 'package:portfolio/app/core/configs/configs.dart';
+import 'package:portfolio/app/providers/scroll_provider.dart';
 import 'package:provider/provider.dart';
 
 class NavBarActionButton extends StatefulWidget {

@@ -1,6 +1,6 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:portfolio2/app/config/app_text_config.dart';
-import 'package:portfolio2/app/config/strings.dart';
+import 'package:portfolio/app/config/app_text_config.dart';
+import 'package:portfolio/app/config/strings.dart';
 
 List<TyperAnimatedText> tabList = [
   TyperAnimatedText(animationText1,

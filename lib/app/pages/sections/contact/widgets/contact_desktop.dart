@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio2/app/config/links.dart';
-import 'package:portfolio2/app/config/strings.dart';
-import 'package:portfolio2/app/core/color/colors.dart';
-import 'package:portfolio2/app/core/color/gradient_colors.dart';
-import 'package:portfolio2/app/core/configs/configs.dart';
-import 'package:portfolio2/app/core/util/constants.dart';
-import 'package:portfolio2/app/pages/sections/contact/configs.dart';
-import 'package:portfolio2/app/pages/widgets/custom_text_heading.dart';
+import 'package:portfolio/app/config/links.dart';
+import 'package:portfolio/app/config/strings.dart';
+import 'package:portfolio/app/core/color/colors.dart';
+import 'package:portfolio/app/core/color/gradient_colors.dart';
+import 'package:portfolio/app/core/configs/configs.dart';
+import 'package:portfolio/app/core/util/constants.dart';
+import 'package:portfolio/app/pages/sections/contact/configs.dart';
+import 'package:portfolio/app/pages/widgets/custom_text_heading.dart';
 import 'package:sizer/sizer.dart';
 
 

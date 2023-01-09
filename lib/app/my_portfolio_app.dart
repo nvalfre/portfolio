@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio2/app/config/strings.dart';
-import 'package:portfolio2/app/pages/sections/main/main_section.dart';
+import 'package:portfolio/app/config/strings.dart';
+import 'package:portfolio/app/pages/sections/main/main_section.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sizer/sizer.dart';

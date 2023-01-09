@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio2/app/services/main_service.dart';
+import 'package:portfolio/app/services/main_service.dart';
 
 class PresenterProvider extends ChangeNotifier {
   final MainViewService mainService = MainViewService();

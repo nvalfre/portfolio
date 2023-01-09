@@ -1,14 +1,14 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-import 'package:portfolio2/app/config/img.dart';
-import 'package:portfolio2/app/config/links.dart';
-import 'package:portfolio2/app/config/strings.dart';
-import 'package:portfolio2/app/core/animations/entrance_fader.dart';
-import 'package:portfolio2/app/core/animations/zoom_animation.dart';
-import 'package:portfolio2/app/core/configs/configs.dart';
-import 'package:portfolio2/app/core/responsive/responsive.dart';
-import 'package:portfolio2/app/pages/sections/home/widgets/animation_text.dart';
-import 'package:portfolio2/app/pages/widgets/color_chage_btn.dart';
+import 'package:portfolio/app/config/img.dart';
+import 'package:portfolio/app/config/links.dart';
+import 'package:portfolio/app/config/strings.dart';
+import 'package:portfolio/app/core/animations/entrance_fader.dart';
+import 'package:portfolio/app/core/animations/zoom_animation.dart';
+import 'package:portfolio/app/core/configs/configs.dart';
+import 'package:portfolio/app/core/responsive/responsive.dart';
+import 'package:portfolio/app/pages/sections/home/widgets/animation_text.dart';
+import 'package:portfolio/app/pages/widgets/color_chage_btn.dart';
 import 'package:sizer/sizer.dart';
 import 'package:universal_html/html.dart' as html;
 
