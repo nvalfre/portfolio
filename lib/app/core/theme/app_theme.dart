@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
+import 'package:portfolio2/app/core/color/colors.dart';
+import 'package:portfolio2/app/core/color/gradient_colors.dart';
 
-import 'color/colors.dart';
-import 'color/gradient_colors.dart';
 
 class AppTheme {
   static ThemeData themeData(bool isDarkTheme, BuildContext context) {

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'colors.dart';
 
-//
 BoxShadow primaryColorShadow = BoxShadow(
   color: primaryColor.withAlpha(100),
   blurRadius: 12.0,
