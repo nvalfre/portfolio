@@ -25,7 +25,7 @@ class _NavBarTabletState extends State<_NavBarTablet> {
             },
             icon: const Icon(Icons.menu),
           ),
-          Space.xm!,
+          SpaceSizedBox.expandedInf!,
           const NavBarLogo(),
           // Space.x1!,
         ],

@@ -8,14 +8,6 @@ class NavBarLogo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // theme
-    var theme = Theme.of(context);
-    //
-    var textSty = TextStyle(
-      color: theme.textColor,
-      fontWeight: FontWeight.w100,
-      fontSize: Responsive.isDesktop(context) ? 24 : 18,
-    );
 
     return Initicon(
       text: "N.  V.",

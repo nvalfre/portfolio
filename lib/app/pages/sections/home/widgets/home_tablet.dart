@@ -11,6 +11,8 @@ import 'package:portfolio/app/pages/sections/home/widgets/animation_text.dart';
 import 'package:portfolio/app/pages/widgets/color_chage_btn.dart';
 import 'package:sizer/sizer.dart';
 import 'package:universal_html/html.dart' as html;
+import 'package:portfolio/app/config/app_text_config.dart';
+import 'package:portfolio/app/config/space_config.dart';
 
 class HomeTab extends StatelessWidget {
   const HomeTab({Key? key}) : super(key: key);
@@ -53,7 +55,7 @@ class HomeTab extends StatelessWidget {
                     ),
                   ],
                 ),
-                Space.y(1.w)!,
+                SpaceSizedBox.verticalSpace(1.w)!,
                 Text(
                   iam,
                   style: TextStyle(
@@ -82,7 +84,7 @@ class HomeTab extends StatelessWidget {
                     ],
                   ),
                 ),
-                Space.y(1.5.w)!,
+                SpaceSizedBox.verticalSpace(1.5.w)!,
                 Padding(
                   padding: EdgeInsets.only(right: 50.w),
                   child: Text(
@@ -93,7 +95,7 @@ class HomeTab extends StatelessWidget {
                         color: theme.textColor.withOpacity(0.6)),
                   ),
                 ),
-                Space.y(2.w)!,
+                SpaceSizedBox.verticalSpace(2.w)!,
                 ColorChageButton(
                   text: 'download cv',
                   onTap: () {

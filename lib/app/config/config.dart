@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/app/config/app_text_config.dart';
 import 'package:portfolio/app/config/space_config.dart';
-
-import 'app_text_config.dart';
 
 class Config {
 

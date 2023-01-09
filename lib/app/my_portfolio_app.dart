@@ -5,8 +5,8 @@ import 'package:provider/provider.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sizer/sizer.dart';
 
+import 'config/config.dart';
 import 'config/routes.dart';
-import 'core/configs/app.dart';
 import 'core/theme/app_theme.dart';
 import 'core/theme/cubit/theme_cubit.dart';
 import 'providers/presenter_provider.dart';
@@ -17,7 +17,7 @@ class MyPortfolioApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    AppConfigs.init(context);
+    Config.init(context);
 
     return MultiBlocProvider(
       providers: [

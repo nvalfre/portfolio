@@ -8,6 +8,7 @@ import 'package:portfolio/app/core/util/constants.dart';
 import 'package:portfolio/app/pages/sections/contact/configs.dart';
 import 'package:portfolio/app/pages/widgets/custom_text_heading.dart';
 import 'package:sizer/sizer.dart';
+import 'package:portfolio/app/config/space_config.dart';
 
 class ContactMobileTab extends StatelessWidget {
   const ContactMobileTab({Key? key}) : super(key: key);
@@ -17,14 +18,14 @@ class ContactMobileTab extends StatelessWidget {
     var theme = Theme.of(context);
     return Column(
       children: [
-        Space.y(10.w)!,
+        SpaceSizedBox.verticalSpace(10.w)!,
         const CustomSectionHeading(text: contactHeading),
-        Space.y(3.w)!,
+        SpaceSizedBox.verticalSpace(3.w)!,
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 10.w),
           child: const CustomSectionSubHeading(text: contactSubHeading),
         ),
-        Space.y(5.w)!,
+        SpaceSizedBox.verticalSpace(5.w)!,
         InkWell(
           onTap: () => openURL(whatsapp),
           child: Container(
@@ -41,7 +42,7 @@ class ContactMobileTab extends StatelessWidget {
             ),
           ),
         ),
-        Space.y(10.w)!,
+        SpaceSizedBox.verticalSpace(10.w)!,
         Wrap(
             alignment: WrapAlignment.center,
             runSpacing: 50,
@@ -58,7 +59,7 @@ class ContactMobileTab extends StatelessWidget {
                       iconSize: 21,
                     ))
                 .toList()),
-        Space.y(5.w)!,
+        SpaceSizedBox.verticalSpace(5.w)!,
         Container(color: Colors.white.withOpacity(0.2), height: 1),
       ],
     );

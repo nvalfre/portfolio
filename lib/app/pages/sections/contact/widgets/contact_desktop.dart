@@ -8,6 +8,7 @@ import 'package:portfolio/app/core/util/constants.dart';
 import 'package:portfolio/app/pages/sections/contact/configs.dart';
 import 'package:portfolio/app/pages/widgets/custom_text_heading.dart';
 import 'package:sizer/sizer.dart';
+import 'package:portfolio/app/config/space_config.dart';
 
 
 class ContactDesktop extends StatelessWidget {
@@ -22,9 +23,9 @@ class ContactDesktop extends StatelessWidget {
       child: Column(
         children: [
           const CustomSectionHeading(text: title),
-          Space.y(1.w)!,
+          SpaceSizedBox.verticalSpace(1.w)!,
           const CustomSectionSubHeading(text: subtitle),
-          Space.y(2.w)!,
+          SpaceSizedBox.verticalSpace(2.w)!,
           Container(
             padding: EdgeInsets.all(size.width * 0.05).copyWith(bottom: 10),
             decoration: BoxDecoration(
@@ -51,7 +52,7 @@ class ContactDesktop extends StatelessWidget {
                           ),
                         ),
 
-                        Space.y(1.w)!,
+                        SpaceSizedBox.verticalSpace(1.w)!,
                         const Text(
                           contactSubHeading,
                           style: TextStyle(
@@ -59,7 +60,7 @@ class ContactDesktop extends StatelessWidget {
                             fontWeight: FontWeight.w100,
                           ),
                         ),
-                        Space.y(2.w)!,
+                        SpaceSizedBox.verticalSpace(2.w)!,
                         // SizedBox(height: AppDimensions.space(3)),
                       ],
                     ),
@@ -86,7 +87,7 @@ class ContactDesktop extends StatelessWidget {
                   ],
                 ),
                 Container(color: Colors.white.withOpacity(0.2), height: 1),
-                Space.y(2.w)!,
+                SpaceSizedBox.verticalSpace(2.w)!,
                 Wrap(
                     alignment: WrapAlignment.center,
                     runSpacing: 50,
@@ -106,7 +107,7 @@ class ContactDesktop extends StatelessWidget {
               ],
             ),
           ),
-          // Space.y!,
+          // SpaceSizedBox.verticalSpace!,
         ],
       ),
     );

@@ -2,11 +2,11 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio/app/config/links.dart';
 import 'package:portfolio/app/config/strings.dart';
-import 'package:portfolio/app/core/configs/configs.dart';
 import 'package:portfolio/app/core/util/constants.dart';
 import 'package:portfolio/app/pages/sections/portfolio/configs.dart';
 import 'package:portfolio/app/pages/widgets/custom_text_heading.dart';
 import 'package:sizer/sizer.dart';
+import 'package:portfolio/app/config/space_config.dart';
 
 import 'project_card.dart';
 
@@ -19,12 +19,12 @@ class PortfolioMobileTab extends StatelessWidget {
     return Column(
       children: [
         const CustomSectionHeading(text: "\nProjects"),
-        Space.y(3.w)!,
+        SpaceSizedBox.verticalSpace(3.w)!,
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 10.w),
           child: CustomSectionSubHeading(text: portfolioSubHeading),
         ),
-        Space.y(5.w)!,
+        SpaceSizedBox.verticalSpace(5.w)!,
         CarouselSlider.builder(
           itemCount: projectUtils.length,
           itemBuilder: (BuildContext context, int itemIndex, int i) => Padding(
@@ -41,7 +41,7 @@ class PortfolioMobileTab extends StatelessWidget {
             enableInfiniteScroll: false,
           ),
         ),
-        Space.y(3.w)!,
+        SpaceSizedBox.verticalSpace(3.w)!,
         OutlinedButton(
           onPressed: () => openURL(gitHub),
           child: const Padding(

@@ -9,6 +9,7 @@ import 'package:portfolio/app/core/responsive/responsive.dart';
 import 'package:portfolio/app/pages/sections/services/configs.dart';
 import 'package:portfolio/app/pages/widgets/custom_text_heading.dart';
 import 'package:sizer/sizer.dart';
+import 'package:portfolio/app/config/space_config.dart';
 
 part 'widgets/services_desktop.dart';
 part 'widgets/services_mobile.dart';

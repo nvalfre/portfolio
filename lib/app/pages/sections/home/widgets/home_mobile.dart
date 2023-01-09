@@ -5,7 +5,8 @@ import 'package:portfolio/app/config/links.dart';
 import 'package:portfolio/app/config/strings.dart';
 import 'package:portfolio/app/core/animations/entrance_fader.dart';
 import 'package:portfolio/app/core/animations/zoom_animation.dart';
-import 'package:portfolio/app/core/configs/configs.dart';
+import 'package:portfolio/app/config/app_text_config.dart';
+import 'package:portfolio/app/config/space_config.dart';
 import 'package:portfolio/app/core/responsive/responsive.dart';
 import 'package:portfolio/app/pages/widgets/color_chage_btn.dart';
 import 'package:sizer/sizer.dart';
@@ -28,13 +29,14 @@ class HomeMobile extends StatelessWidget {
             children: [
               Text(
                 helloTag,
-                style: AppText.h3!.copyWith(fontSize: Responsive.isFontSize(context, 16)),
+                style: AppText.h3!
+                    .copyWith(fontSize: Responsive.isFontSize(context, 16)),
               ),
               // Space.x!,
               Image.asset(StaticImage.hi, height: 10.sp),
             ],
           ),
-          // Space.y(1.w)!,
+          // SpaceSizedBox.verticalSpace(1.w)!,
           Text(
             iam,
             style: TextStyle(
@@ -42,7 +44,7 @@ class HomeMobile extends StatelessWidget {
               fontWeight: FontWeight.w600,
             ),
           ),
-          Space.y(1.w)!,
+          SpaceSizedBox.verticalSpace(1.w)!,
           Row(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
@@ -61,7 +63,7 @@ class HomeMobile extends StatelessWidget {
             ],
           ),
 
-          Space.y(2.w)!,
+          SpaceSizedBox.verticalSpace(2.w)!,
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [

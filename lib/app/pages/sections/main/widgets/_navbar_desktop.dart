@@ -14,9 +14,7 @@ class _NavbarDesktopState extends State<_NavbarDesktop> {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     var theme = Theme.of(context);
-    const pattern = 'yyyy-MM-dd';
-    final DateFormat formatter = DateFormat(pattern);
-    final String formattedDate = formatter.format(DateTime.now());
+    String formattedDate = getDate();
 
     return BlocBuilder<ThemeCubit, ThemeState>(builder: (context, state) {
       return Container(
@@ -34,7 +32,7 @@ class _NavbarDesktopState extends State<_NavbarDesktop> {
                 index: e.key,
               ),
             ),
-            Space.xm!,
+            SpaceSizedBox.expandedInf!,
             Text(themeDescription,
                 style: TextStyle(
                   fontSize: Responsive.isFontSize(context, 10),
@@ -54,16 +52,28 @@ class _NavbarDesktopState extends State<_NavbarDesktop> {
                     color: state.isDarkThemeOn ? Colors.black : Colors.white,
                   )),
             ),
-            Text(formattedDate,
-                style: TextStyle(
-                  fontSize: Responsive.isFontSize(context, 10),
-                  fontWeight: FontWeight.w400,
-                  color: theme.textColor.withOpacity(0.6),
-                ))
+            getDateText(formattedDate, context, theme)
             // Space.x!,
           ],
         ),
       );
     });
+  }
+
+  static Text getDateText(String formattedDate, BuildContext context, ThemeData theme) {
+    return Text(formattedDate,
+              style: TextStyle(
+                fontSize: Responsive.isFontSize(context, 10),
+                fontWeight: FontWeight.w400,
+                color: theme.textColor.withOpacity(0.6),
+              ));
+  }
+
+  static String getDate() {
+    const pattern = 'yyyy-MM-dd';
+    final DateFormat formatter = DateFormat(pattern);
+    final String formattedDate = formatter.format(DateTime.now());
+
+    return formattedDate;
   }
 }

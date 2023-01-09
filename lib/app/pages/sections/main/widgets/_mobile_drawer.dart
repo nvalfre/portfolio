@@ -67,7 +67,7 @@ class _MobileDrawer extends StatelessWidget {
                           ),
                         ),
                       ),
-                  Space.y(5.w)!,
+                  SpaceSizedBox.verticalSpace(5.w)!,
                   ColorChageButton(
                     text: resumeText,
                     onTap: () {

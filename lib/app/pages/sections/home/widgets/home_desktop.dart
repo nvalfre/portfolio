@@ -10,6 +10,8 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio/app/core/animations/entrance_fader.dart';
 import 'package:portfolio/app/core/configs/configs.dart';
+import 'package:portfolio/app/config/app_text_config.dart';
+import 'package:portfolio/app/config/space_config.dart';
 
 class HomeDesktop extends StatelessWidget {
   const HomeDesktop({Key? key}) : super(key: key);
@@ -60,7 +62,7 @@ class HomeDesktop extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Space.y(0.5.w)!,
+                  SpaceSizedBox.verticalSpace(0.5.w)!,
                   const Text(iam,
                       style: TextStyle(
                         fontSize: 50,
@@ -84,7 +86,7 @@ class HomeDesktop extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Space.y(1.5.w)!,
+                  SpaceSizedBox.verticalSpace(1.5.w)!,
                   Padding(
                     padding: EdgeInsets.only(right: 10.w),
                     child: Text(miniDescription,
@@ -94,7 +96,7 @@ class HomeDesktop extends StatelessWidget {
                           color: theme.textColor.withOpacity(0.6),
                         )),
                   ),
-                  Space.y(3.w)!,
+                  SpaceSizedBox.verticalSpace(3.w)!,
                   ColorChageButton(
                     text: 'download cv',
                     onTap: () {

@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/app/config/links.dart';
 import 'package:portfolio/app/config/strings.dart';
-import 'package:portfolio/app/core/configs/configs.dart';
 import 'package:portfolio/app/core/util/constants.dart';
 import 'package:portfolio/app/pages/sections/portfolio/configs.dart';
 import 'package:portfolio/app/pages/widgets/custom_text_heading.dart';
 import 'package:sizer/sizer.dart';
-
+import 'package:portfolio/app/config/space_config.dart';
 import 'project_card.dart';
 
 class PortfolioDesktop extends StatefulWidget {
@@ -25,9 +24,9 @@ class _PortfolioDesktopState extends State<PortfolioDesktop> {
       child: Column(
         children: [
           const CustomSectionHeading(text: "\nProjects"),
-          Space.y(1.w)!,
+          SpaceSizedBox.verticalSpace(1.w)!,
           CustomSectionSubHeading(text: portfolioSubHeading),
-          Space.y(2.w)!,
+          SpaceSizedBox.verticalSpace(2.w)!,
           Wrap(
             alignment: WrapAlignment.start,
             crossAxisAlignment: WrapCrossAlignment.start,
@@ -40,7 +39,7 @@ class _PortfolioDesktopState extends State<PortfolioDesktop> {
                 )
                 .toList(),
           ),
-          Space.y(3.w)!,
+          SpaceSizedBox.verticalSpace(3.w)!,
           OutlinedButton(
             onPressed: () => openURL(gitHub),
             child: const Padding(

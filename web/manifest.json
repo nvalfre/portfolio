@@ -1,11 +1,11 @@
 {
-    "name": "portfolio2",
-    "short_name": "portfolio2",
+    "name": "portfolio",
+    "short_name": "portfolio",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "NV Portfolio",
+    "description": "Nicolas Valfre Porfolio",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
