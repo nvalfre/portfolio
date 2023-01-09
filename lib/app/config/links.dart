@@ -1,4 +1,4 @@
-const String resume = '';
+const String resume = 'https://drive.google.com/file/d/1VprgRgG5t4AIahwznjp-NbZCBlFJ-q77/view?usp=sharing';
 
 const String gitHub = 'https://github.com/nvalfre';
 const String linkedin = 'https://linkedin.com/in/nvalfre';
