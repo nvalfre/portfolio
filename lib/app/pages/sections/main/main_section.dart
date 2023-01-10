@@ -43,7 +43,7 @@ class MainPage extends StatelessWidget {
       drawer: !Responsive.isDesktop(context) ? const _MobileDrawer() : null,
       body: BlocBuilder<ThemeCubit, ThemeState>(
         builder: (context, state) {
-          return drawerProvider.mainService
+          return drawerProvider.mainViewService
               .buildMainStack(state: state, height: height, width: width);
         },
       ),
