@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "3be4101a85fefd4f01fd18cb754a5b91",
+  "assets/AssetManifest.json": "4ad202bca40e58989cce2e1ff2a978d9",
 "assets/assets/fonts/montserrat/montserrat.ttf": "ee6539921d713482b8ccd4d0d23961bb",
 "assets/assets/fonts/poppins/Poppins-Bold.ttf": "a3e0b5f427803a187c1b62c5919196aa",
 "assets/assets/fonts/poppins/Poppins-Italic.ttf": "5e956c44060a7b3c0e39819ae390ab15",
@@ -25,9 +25,11 @@ const RESOURCES = {
 "assets/assets/imgs/background-wm.gif": "0d5a83c32337fc349ff77cc3febe2c9d",
 "assets/assets/imgs/BG01.png": "292fe68441561eae14b077f8f112acf9",
 "assets/assets/imgs/flutter.png": "0b5a2f8d3f4d173805affaf9f84f6c87",
+"assets/assets/imgs/golang.png": "92bcadb5d4888cf2a4288d0fe4e898c1",
+"assets/assets/imgs/java.png": "1fc12b4e1d5a799604f4d4951b3d4b9f",
 "assets/FontManifest.json": "663783f541c46e7f04c244ce710d1b61",
 "assets/fonts/MaterialIcons-Regular.otf": "e7069dfd19b331be16bed984668fe080",
-"assets/NOTICES": "a9bfe82b82f37cece6d817acc1e45487",
+"assets/NOTICES": "5ee21632c74a5b8be8cd76e682f4f3cf",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "canvaskit/canvaskit.js": "97937cb4c2c2073c968525a3e08c86a3",
 "canvaskit/canvaskit.wasm": "3de12d898ec208a5f31362cc00f09b9e",
@@ -39,9 +41,9 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "80d9dc3deb55aa2b5996f5b61c5fd6f3",
-"/": "80d9dc3deb55aa2b5996f5b61c5fd6f3",
-"main.dart.js": "5984e2db620d00e7b418499fb895f894",
+"index.html": "c6dea749799e7d0d086bc6c97f257814",
+"/": "c6dea749799e7d0d086bc6c97f257814",
+"main.dart.js": "f55bba7f77838c9e2923ad9f184cecd8",
 "manifest.json": "f1a9fb360dca8853a4a1ead94b605622",
 "version.json": "009c9e65172e010890f7f65fde438006"
 };
