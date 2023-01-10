@@ -2,6 +2,12 @@ import 'package:flutter/material.dart';
 
 import 'colors.dart';
 
+const greenCyan = LinearGradient(
+  begin: Alignment.centerLeft,
+  end: Alignment.centerRight,
+  colors: [Color(0xFF5395FE), Color(0xFF08AE93)],
+);
+
 const pinkpurple = LinearGradient(
   begin: Alignment.centerLeft,
   end: Alignment.centerRight,
@@ -22,7 +28,7 @@ const grayWhite = LinearGradient(
 const buttonGradi = LinearGradient(
   begin: Alignment.topCenter,
   end: Alignment.bottomCenter,
-  colors: [Color(0XFF7DE7EB), Color(0XFF33BBCF)],
+  colors: [Color(0xFF09FBD3), Color(0X5395FEFF)],
 );
 
 const contactGradi = LinearGradient(

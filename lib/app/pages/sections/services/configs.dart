@@ -15,13 +15,13 @@ List<Configs> servicesUtils = [
   Configs(
     name: 'Backend Developer',
     icon: 'assets/icons/backend.svg',
-    description: "Developing high scale backend apps. Utilize my skills and contribute to successful web projects.",
+    description: "Developing high scale backend apps. Using my knowledge to contribute successful web projects.",
     tool: ['Java', 'Golang', 'Rust', 'Node'],
   ),
   Configs(
     name: 'Android App Development',
     icon: 'assets/icons/android.svg',
-    description: "Highly skilled mobile app developer seeking new opportunities to create innovative and user-friendly apps.",
+    description: "Mobile app developer growing up with initiative to innovative user-friendly apps.",
     tool: ['Flutter', 'React Native', 'Android (Kotlin or Java)'],
   ),
   Configs(

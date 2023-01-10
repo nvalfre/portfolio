@@ -57,7 +57,7 @@ class _MobileCCButtonState extends State<MobileCCButton> {
           width: _animatedWidth,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(3),
-            gradient: pinkpurple,
+            gradient: greenCyan,
           ),
         ),
         InkWell(
@@ -130,7 +130,7 @@ class _TabCCButtonState extends State<TabCCButton> {
           width: _animatedWidth,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(5),
-            gradient: pinkpurple,
+            gradient: greenCyan,
           ),
         ),
         InkWell(
@@ -200,7 +200,7 @@ class _DesktopCCButtonState extends State<DesktopCCButton> {
           width: _animatedWidth,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(6),
-            gradient: pinkpurple,
+            gradient: greenCyan,
           ),
         ),
         InkWell(

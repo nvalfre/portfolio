@@ -14,6 +14,8 @@ import 'package:universal_html/html.dart' as html;
 
 import 'animation_text.dart';
 
+const summaryScore = "- ";
+
 class HomeMobile extends StatelessWidget {
   const HomeMobile({Key? key}) : super(key: key);
 
@@ -49,7 +51,7 @@ class HomeMobile extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               Text(
-                "A ",
+                summaryScore,
                 style: TextStyle(
                   fontSize: Responsive.isFontSize(context, 18),
                   fontWeight: FontWeight.w400,
