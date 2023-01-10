@@ -1,17 +1,6 @@
-class Configs {
-  final String banners;
-  final String icons;
-  final String titles;
-  final String description;
-  final String links;
-  Configs({
-    required this.banners,
-    required this.icons,
-    required this.titles,
-    required this.description,
-    required this.links,
-  });
-}
+import 'package:portfolio/app/domain/custom_card.dart';
 
-List<Configs> projectUtils = [
+const List<String> emptyList = [];
+
+List<CustomCard> projectUtils = [
 ];

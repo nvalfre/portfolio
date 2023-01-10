@@ -31,7 +31,7 @@ class ServiceDesktopState extends State<ServiceDesktop> {
                 .asMap()
                 .entries
                 .map(
-                  (e) => _ServiceCard(service: e.value),
+                  (e) => _ServiceCard(serviceCard: e.value),
                 )
                 .toList(),
           )

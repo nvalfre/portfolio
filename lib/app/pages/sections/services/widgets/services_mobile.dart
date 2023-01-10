@@ -20,7 +20,7 @@ class ServiceMobile extends StatelessWidget {
           itemCount: servicesUtils.length,
           itemBuilder: (BuildContext context, int itemIndex, int i) => Padding(
             padding: EdgeInsets.symmetric(vertical: 0.5.w),
-            child: _ServiceCard(service: servicesUtils[i]),
+            child: _ServiceCard(serviceCard: servicesUtils[i]),
           ),
           options: CarouselOptions(
             viewportFraction: 0.6,

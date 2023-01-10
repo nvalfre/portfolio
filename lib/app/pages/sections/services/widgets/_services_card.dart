@@ -1,9 +1,9 @@
 part of '../services.dart';
 
 class _ServiceCard extends StatefulWidget {
-  final Configs service;
+  final CustomCard serviceCard;
 
-  const _ServiceCard({Key? key, required this.service}) : super(key: key);
+  const _ServiceCard({Key? key, required this.serviceCard}) : super(key: key);
 
   @override
   _ServiceCardState createState() => _ServiceCardState();
@@ -41,18 +41,18 @@ class _ServiceCardState extends State<_ServiceCard> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SvgPicture.asset(
-              widget.service.icon,
+              widget.serviceCard.icon,
               height: 60,
             ),
             SpaceSizedBox.verticalSpace(3.w)!,
-            Text(widget.service.name,
+            Text(widget.serviceCard.title ?? 'Service',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: isHover ? whiteColor : theme.textColor,
                 )),
             SpaceSizedBox.verticalSpace(1.w)!,
             Text(
-              widget.service.description,
+              widget.serviceCard.description,
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: isHover ? whiteColor.withOpacity(0.8) : theme.textColor,
@@ -64,7 +64,7 @@ class _ServiceCardState extends State<_ServiceCard> {
             if (Responsive.isDesktop(context))
               Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: widget.service.tool
+                  children: widget.serviceCard.listItems
                       .map((e) => Row(
                             children: [
                               const Text('🛠   '),
@@ -81,7 +81,7 @@ class _ServiceCardState extends State<_ServiceCard> {
                 child: ListView(
                     padding: EdgeInsets.zero,
                     shrinkWrap: true,
-                    children: widget.service.tool
+                    children: widget.serviceCard.listItems
                         .map((e) => Row(
                               children: [
                                 const Text('🛠   '),

@@ -6,6 +6,7 @@ import 'package:portfolio/app/core/color/colors.dart';
 import 'package:portfolio/app/core/color/gradient_colors.dart';
 import 'package:portfolio/app/core/configs/configs.dart';
 import 'package:portfolio/app/core/responsive/responsive.dart';
+import 'package:portfolio/app/domain/custom_card.dart';
 import 'package:portfolio/app/pages/sections/services/configs.dart';
 import 'package:portfolio/app/pages/widgets/custom_text_heading.dart';
 import 'package:sizer/sizer.dart';

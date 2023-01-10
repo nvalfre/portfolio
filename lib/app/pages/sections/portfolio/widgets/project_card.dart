@@ -4,13 +4,13 @@ import 'package:portfolio/app/core/color/gradient_colors.dart';
 import 'package:portfolio/app/core/configs/configs.dart';
 import 'package:portfolio/app/core/responsive/responsive.dart';
 import 'package:portfolio/app/core/util/constants.dart';
-import 'package:portfolio/app/pages/sections/portfolio/configs.dart';
+import 'package:portfolio/app/domain/custom_card.dart';
 import 'package:sizer/sizer.dart';
 
 class ProjectCard extends StatefulWidget {
-  final Configs project;
+  final CustomCard projectCard;
 
-  const ProjectCard({Key? key, required this.project}) : super(key: key);
+  const ProjectCard({Key? key, required this.projectCard}) : super(key: key);
   @override
   ProjectCardState createState() => ProjectCardState();
 }
@@ -27,7 +27,12 @@ class ProjectCardState extends State<ProjectCard> {
       hoverColor: Colors.transparent,
       splashColor: Colors.transparent,
       highlightColor: Colors.transparent,
-      onTap: () => openURL(widget.project.links),
+      onTap: () {
+        var tapAction = widget.projectCard.link != null
+        ? openURL(widget.projectCard.link ?? '')
+            : null;
+        return tapAction;
+      },
       onHover: (isHovering) {
         if (isHovering) {
           setState(() => isHover = true);
@@ -53,12 +58,12 @@ class ProjectCardState extends State<ProjectCard> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset(
-                    widget.project.icons,
+                    widget.projectCard.icon,
                     height: height * 0.05,
                   ),
                   SizedBox(height: height * 0.02),
                   Text(
-                    widget.project.titles,
+                    widget.projectCard.title,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: isHover ? whiteColor : theme.textColor,
@@ -67,7 +72,7 @@ class ProjectCardState extends State<ProjectCard> {
                   ),
                   SizedBox(height: height * 0.01),
                   Text(
-                    widget.project.description,
+                    widget.projectCard.description,
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: isHover ? whiteColor : theme.textColor,
@@ -77,7 +82,7 @@ class ProjectCardState extends State<ProjectCard> {
                 ],
               ),
             ),
-            AnimatedOpacity(
+            if (widget.projectCard.banners != null) AnimatedOpacity(
               duration: const Duration(milliseconds: 400),
               opacity: isHover ? 0.1 : 1.0,
               child: Container(
@@ -86,7 +91,7 @@ class ProjectCardState extends State<ProjectCard> {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   image: DecorationImage(
-                      image: AssetImage(widget.project.banners),
+                      image: AssetImage(widget.projectCard.banners ?? ''),
                       fit: BoxFit.cover),
                 ),
                 // child: Image.asset(

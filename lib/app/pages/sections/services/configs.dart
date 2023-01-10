@@ -1,39 +1,28 @@
-class Configs {
-  final String name;
-  final String icon;
-  final List<String> tool;
-  final String description;
+import 'package:portfolio/app/domain/custom_card.dart';
 
-  Configs(
-      {required this.name,
-      required this.icon,
-      required this.description,
-      required this.tool});
-}
-
-List<Configs> servicesUtils = [
-  Configs(
-    name: 'Backend Developer',
+List<CustomCard> servicesUtils = [
+  CustomCard(
+    title: 'Backend Developer',
     icon: 'assets/icons/backend.svg',
     description: "Developing high scale backend apps. Using my knowledge to contribute successful web projects.",
-    tool: ['Java', 'Golang', 'Rust', 'Node'],
+    listItems: ['Java', 'Golang', 'Rust', 'Node'],
   ),
-  Configs(
-    name: 'Android App Development',
+  CustomCard(
+    title: 'Android App Development',
     icon: 'assets/icons/android.svg',
     description: "Mobile app developer growing up with initiative to innovative user-friendly apps.",
-    tool: ['Flutter', 'React Native', 'Android (Kotlin or Java)'],
+    listItems: ['Flutter', 'React Native', 'Android (Kotlin or Java)'],
   ),
-  Configs(
-    name: 'iOS App Development',
+  CustomCard(
+    title: 'iOS App Development',
     icon: 'assets/icons/apple.svg',
     description: "Are you interested in the great Mobile app? Let's make it a reality.",
-    tool: ['Flutter', 'React Native'],
+    listItems: ['Flutter', 'React Native'],
   ),
-  Configs(
-    name: 'Web Development',
+  CustomCard(
+    title: 'Web Development',
     icon: 'assets/icons/website.svg',
     description: "Web development wizard seeking new challenges and opportunities.",
-    tool: ['Flutter', 'Html,css,js', 'Android (Kotlin or Java)'],
+    listItems: ['Flutter', 'Html,css,js', 'Android (Kotlin or Java)'],
   ),
 ];

@@ -37,7 +37,7 @@ class _PortfolioDesktopState extends State<PortfolioDesktop> {
                   .asMap()
                   .entries
                   .map(
-                    (e) => ProjectCard(project: e.value),
+                    (e) => ProjectCard(projectCard: e.value),
                   )
                   .toList(),
             ),
