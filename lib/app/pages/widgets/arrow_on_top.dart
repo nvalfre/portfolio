@@ -59,7 +59,7 @@ class ArrowOnTopState extends State<ArrowOnTop> {
                   child: Icon(
                     Icons.arrow_drop_up_outlined,
                     color: isHover ? blackColor : whiteColor,
-                    size: 5.h,
+                    size: 3.h,
                   ),
                 ),
               ),

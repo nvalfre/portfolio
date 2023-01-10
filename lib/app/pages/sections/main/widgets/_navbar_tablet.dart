@@ -1,4 +1,4 @@
-part of '../main_section.dart';
+part of '../main_section_responsive.dart';
 
 class _NavBarTablet extends StatefulWidget {
   const _NavBarTablet({Key? key}) : super(key: key);

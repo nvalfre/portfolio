@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:portfolio/app/pages/sections/main/main_section.dart';
+import 'package:portfolio/app/pages/sections/main/main_section_responsive.dart';
 import 'bloc/connected_bloc.dart';
 
 class NChecking extends StatelessWidget {

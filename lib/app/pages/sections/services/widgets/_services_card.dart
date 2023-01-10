@@ -1,4 +1,4 @@
-part of '../services.dart';
+part of '../services_responsive.dart';
 
 class _ServiceCard extends StatefulWidget {
   final CustomCard serviceCard;

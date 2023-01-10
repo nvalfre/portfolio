@@ -25,7 +25,7 @@ class ContactDesktop extends StatelessWidget {
           const CustomSectionHeading(text: title),
           SpaceSizedBox.verticalSpace(1.w)!,
           const CustomSectionSubHeading(text: subtitle),
-          SpaceSizedBox.verticalSpace(2.w)!,
+          SpaceSizedBox.verticalSpace(1.w)!,
           Container(
             padding: EdgeInsets.all(size.width * 0.05).copyWith(bottom: 10),
             decoration: BoxDecoration(
@@ -60,7 +60,7 @@ class ContactDesktop extends StatelessWidget {
                             fontWeight: FontWeight.w100,
                           ),
                         ),
-                        SpaceSizedBox.verticalSpace(2.w)!,
+                        SpaceSizedBox.verticalSpace(1.w)!,
                         // SizedBox(height: AppDimensions.space(3)),
                       ],
                     ),
@@ -87,7 +87,7 @@ class ContactDesktop extends StatelessWidget {
                   ],
                 ),
                 Container(color: Colors.white.withOpacity(0.2), height: 1),
-                SpaceSizedBox.verticalSpace(2.w)!,
+                SpaceSizedBox.verticalSpace(1.w)!,
                 Wrap(
                     alignment: WrapAlignment.center,
                     runSpacing: 50,

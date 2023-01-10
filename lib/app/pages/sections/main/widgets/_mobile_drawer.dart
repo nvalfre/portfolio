@@ -1,4 +1,4 @@
-part of '../main_section.dart';
+part of '../main_section_responsive.dart';
 
 const lightModeText = "Light Mode";
 const darkModeText = "Dark Mode";

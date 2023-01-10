@@ -1,4 +1,4 @@
-part of '../services.dart';
+part of '../services_responsive.dart';
 
 class ServiceDesktop extends StatefulWidget {
   const ServiceDesktop({Key? key}) : super(key: key);

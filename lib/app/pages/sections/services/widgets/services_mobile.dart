@@ -1,4 +1,4 @@
-part of '../services.dart';
+part of '../services_responsive.dart';
 
 class ServiceMobile extends StatelessWidget {
   const ServiceMobile({Key? key}) : super(key: key);
