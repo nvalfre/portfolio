@@ -1,7 +1,9 @@
 const String helloTag = '''Hi there, Welcome to My Interactive Portfolio  ''';
-const String wipTag = '''Cards WIP''';
+const String helloMicroTag = '''Hello! ''';
+const String wipTag = '''WIP''';
 
-const String iam = "I'm Nicolas Valfre";
+const String iam = "Nicolas Valfre";
+const String degree = "Software Engineer";
 
 const String animationText1 = " Backend Developer";
 const String animationText2 = " Mobile Application Developer";

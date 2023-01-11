@@ -44,8 +44,8 @@ class HomeTab extends StatelessWidget {
                   children: [
                     Text(
                       helloTag,
-                      style: AppText.h3!
-                          .copyWith(fontSize: Responsive.isFontSize(context, 18)),
+                      style: AppText.h3!.copyWith(
+                          fontSize: Responsive.isFontSize(context, 18)),
                     ),
                     EntranceFader(
                       offset: const Offset(0, 0),
@@ -63,26 +63,56 @@ class HomeTab extends StatelessWidget {
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                EntranceFader(
-                  offset: const Offset(-10, 0),
-                  delay: const Duration(seconds: 1),
-                  duration: const Duration(milliseconds: 800),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Text(
-                        "A ",
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    const Text(" -> ",
                         style: TextStyle(
-                          fontSize: Responsive.isFontSize(context, 24),
+                          fontSize: 32,
                           fontWeight: FontWeight.w400,
-                        ),
+                        )),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 8.0),
+                      child: AnimatedTextKit(
+                        isRepeatingAnimation: false,
+                        animatedTexts: animatedText1,
                       ),
-                      AnimatedTextKit(
-                        animatedTexts: tabList,
-                        isRepeatingAnimation: true,
+                    ),
+                  ],
+                ),
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    const Text(" -> ",
+                        style: TextStyle(
+                          fontSize: 32,
+                          fontWeight: FontWeight.w400,
+                        )),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 8.0),
+                      child: AnimatedTextKit(
+                        isRepeatingAnimation: false,
+                        animatedTexts: animatedText2,
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
+                ),
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    const Text(" -> ",
+                        style: TextStyle(
+                          fontSize: 32,
+                          fontWeight: FontWeight.w400,
+                        )),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 8.0),
+                      child: AnimatedTextKit(
+                        isRepeatingAnimation: false,
+                        animatedTexts: animatedText3,
+                      ),
+                    ),
+                  ],
                 ),
                 SpaceSizedBox.verticalSpace(1.5.w)!,
                 Padding(

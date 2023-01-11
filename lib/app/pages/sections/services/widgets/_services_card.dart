@@ -44,23 +44,13 @@ class _ServiceCardState extends State<_ServiceCard> {
               widget.serviceCard.icon,
               height: 60,
             ),
-            SpaceSizedBox.verticalSpace(3.w)!,
+            SpaceSizedBox.verticalSpace(2.w)!,
             Text(widget.serviceCard.title ?? 'Service',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: isHover ? whiteColor : theme.textColor,
                 )),
             SpaceSizedBox.verticalSpace(1.w)!,
-            Text(
-              widget.serviceCard.description,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: isHover ? whiteColor.withOpacity(0.8) : theme.textColor,
-                fontWeight: FontWeight.w200,
-                fontSize: 13,
-              ),
-            ),
-            SpaceSizedBox.verticalSpace(2.w)!,
             if (Responsive.isDesktop(context))
               Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -77,24 +67,21 @@ class _ServiceCardState extends State<_ServiceCard> {
                           ))
                       .toList()),
             if (Responsive.isMobile(context) || Responsive.isTablet(context))
-              Expanded(
-                child: ListView(
-                    padding: EdgeInsets.zero,
-                    shrinkWrap: true,
-                    children: widget.serviceCard.listItems
-                        .map((e) => Row(
-                              children: [
-                                const Text('🛠   '),
-                                Text(e,
-                                    style: TextStyle(
-                                      color: isHover
-                                          ? whiteColor
-                                          : theme.textColor,
-                                    )),
-                              ],
-                            ))
-                        .toList()),
-              )
+              ListView(
+                  padding: EdgeInsets.zero,
+                  shrinkWrap: true,
+                  children: widget.serviceCard.listItems
+                      .map((e) => Row(
+                            children: [
+                              const Text('🛠   '),
+                              Text(e,
+                                  style: TextStyle(
+                                    color:
+                                        isHover ? whiteColor : theme.textColor,
+                                  )),
+                            ],
+                          ))
+                      .toList()),
           ],
         ),
       ),

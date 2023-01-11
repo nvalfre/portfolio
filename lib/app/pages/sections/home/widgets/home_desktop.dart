@@ -3,6 +3,7 @@ import 'package:portfolio/app/config/links.dart';
 import 'package:portfolio/app/config/strings.dart';
 import 'package:portfolio/app/core/animations/zoom_animation.dart';
 import 'package:portfolio/app/core/responsive/responsive.dart';
+import 'package:portfolio/app/pages/sections/home/widgets/animation_text.dart';
 import 'package:portfolio/app/pages/widgets/color_chage_btn.dart';
 import 'package:sizer/sizer.dart';
 import 'package:universal_html/html.dart' as html;
@@ -19,17 +20,6 @@ class HomeDesktop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    List<TyperAnimatedText> desktopList = [
-      TyperAnimatedText(animationText1,
-          speed: const Duration(milliseconds: 50),
-          textStyle: AppText.h2!.copyWith(fontSize: 32)),
-      TyperAnimatedText(animationText2,
-          speed: const Duration(milliseconds: 50),
-          textStyle: AppText.h2!.copyWith(fontSize: 32)),
-      TyperAnimatedText(animationText3,
-          speed: const Duration(milliseconds: 50),
-          textStyle: AppText.h2!.copyWith(fontSize: 32))
-    ];
 
     return SizedBox(
       height: 40.h,
@@ -79,9 +69,42 @@ class HomeDesktop extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.only(top: 8.0),
                         child: AnimatedTextKit(
-                          isRepeatingAnimation: true,
-                          repeatForever: true,
-                          animatedTexts: desktopList,
+                          isRepeatingAnimation: false,
+                          animatedTexts: animatedText1,
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      const Text(" -> ",
+                          style: TextStyle(
+                            fontSize: 32,
+                            fontWeight: FontWeight.w400,
+                          )),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 8.0),
+                        child: AnimatedTextKit(
+                          isRepeatingAnimation: false,
+                          animatedTexts: animatedText2,
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      const Text(" -> ",
+                          style: TextStyle(
+                            fontSize: 32,
+                            fontWeight: FontWeight.w400,
+                          )),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 8.0),
+                        child: AnimatedTextKit(
+                          isRepeatingAnimation: false,
+                          animatedTexts: animatedText3,
                         ),
                       ),
                     ],

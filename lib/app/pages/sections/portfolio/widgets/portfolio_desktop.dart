@@ -70,7 +70,10 @@ class _PortfolioDesktopState extends State<PortfolioDesktop> {
       padding: const EdgeInsets.all(8.0),
       child: Column(
             children: [
-              const CircularProgressIndicator(),
+              const Padding(
+                padding: const EdgeInsets.only(bottom: 8.0),
+                child: const CircularProgressIndicator(),
+              ),
               Text(tag,
                   style: const TextStyle(
                     fontSize: 15,

@@ -16,7 +16,7 @@ List<CustomCard> servicesUtils = [
   CustomCard(
     title: 'iOS App Development',
     icon: 'assets/icons/apple.svg',
-    description: "Are you interested in the great Mobile app? Let's make it a reality.",
+    description: "Are you interested in the great Mobile app? ",
     listItems: ['Flutter', 'React Native'],
   ),
   CustomCard(

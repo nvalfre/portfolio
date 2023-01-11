@@ -24,24 +24,31 @@ class PortfolioMobileTab extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: 10.w),
           child: CustomSectionSubHeading(text: portfolioSubHeading),
         ),
-        SpaceSizedBox.verticalSpace(5.w)!,
-        CarouselSlider.builder(
-          itemCount: projectUtils.length,
-          itemBuilder: (BuildContext context, int itemIndex, int i) => Padding(
-            padding: const EdgeInsets.symmetric(vertical: 15.0),
-            child: ProjectCard(projectCard: projectUtils[i]),
+        SpaceSizedBox.verticalSpace(1.w)!,
+        if (projectUtils.isNotEmpty)
+          Row(
+            children: [
+              CarouselSlider.builder(
+                itemCount: projectUtils.length,
+                itemBuilder: (BuildContext context, int itemIndex, int i) =>
+                    Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 15.0),
+                  child: ProjectCard(projectCard: projectUtils[i]),
+                ),
+                options: CarouselOptions(
+                  height: height * 0.4,
+                  autoPlay: true,
+                  autoPlayInterval: const Duration(seconds: 5),
+                  enlargeCenterPage: true,
+                  autoPlayCurve: Curves.fastOutSlowIn,
+                  autoPlayAnimationDuration: const Duration(milliseconds: 800),
+                  enableInfiniteScroll: false,
+                ),
+              ),
+              SpaceSizedBox.verticalSpace(1.w)!
+            ],
           ),
-          options: CarouselOptions(
-            height: height * 0.4,
-            autoPlay: true,
-            autoPlayInterval: const Duration(seconds: 5),
-            enlargeCenterPage: true,
-            autoPlayCurve: Curves.fastOutSlowIn,
-            autoPlayAnimationDuration: const Duration(milliseconds: 800),
-            enableInfiniteScroll: false,
-          ),
-        ),
-        SpaceSizedBox.verticalSpace(3.w)!,
+        SpaceSizedBox.verticalSpace(1.w)!,
         OutlinedButton(
           onPressed: () => openURL(gitHub),
           child: const Padding(

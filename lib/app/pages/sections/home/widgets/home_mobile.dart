@@ -7,14 +7,17 @@ import 'package:portfolio/app/core/animations/entrance_fader.dart';
 import 'package:portfolio/app/core/animations/zoom_animation.dart';
 import 'package:portfolio/app/config/app_text_config.dart';
 import 'package:portfolio/app/config/space_config.dart';
+import 'package:portfolio/app/core/color/colors.dart';
+import 'package:portfolio/app/core/color/gradient_colors.dart';
 import 'package:portfolio/app/core/responsive/responsive.dart';
+import 'package:portfolio/app/core/util/constants.dart';
 import 'package:portfolio/app/pages/widgets/color_chage_btn.dart';
 import 'package:sizer/sizer.dart';
 import 'package:universal_html/html.dart' as html;
 
 import 'animation_text.dart';
 
-const summaryScore = "- ";
+const summaryScore = "-> ";
 
 class HomeMobile extends StatelessWidget {
   const HomeMobile({Key? key}) : super(key: key);
@@ -30,12 +33,12 @@ class HomeMobile extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                helloTag,
-                style: AppText.h3!
-                    .copyWith(fontSize: Responsive.isFontSize(context, 16)),
+                helloMicroTag,
+                style: AppText.h2!
+                    .copyWith(fontSize: Responsive.isFontSize(context, 28)),
               ),
               // Space.x!,
-              Image.asset(StaticImage.hi, height: 10.sp),
+              Image.asset(StaticImage.hi, height: 12.sp),
             ],
           ),
           // SpaceSizedBox.verticalSpace(1.w)!,
@@ -44,6 +47,14 @@ class HomeMobile extends StatelessWidget {
             style: TextStyle(
               fontSize: Responsive.isFontSize(context, 28),
               fontWeight: FontWeight.w600,
+            ),
+          ),
+          SpaceSizedBox.verticalSpace(1.w)!,
+          Text(
+            degree,
+            style: TextStyle(
+              fontSize: Responsive.isFontSize(context, 20),
+              fontWeight: FontWeight.w500,
             ),
           ),
           SpaceSizedBox.verticalSpace(1.w)!,
@@ -58,22 +69,67 @@ class HomeMobile extends StatelessWidget {
                 ),
               ),
               AnimatedTextKit(
-                animatedTexts: mobileList,
-                repeatForever: true,
-                isRepeatingAnimation: true,
+                animatedTexts: animatedText1,
+                isRepeatingAnimation: false,
+              ),
+            ],
+          ),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              Text(
+                summaryScore,
+                style: TextStyle(
+                  fontSize: Responsive.isFontSize(context, 18),
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              AnimatedTextKit(
+                animatedTexts: animatedText2,
+                isRepeatingAnimation: false,
+              ),
+            ],
+          ),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              Text(
+                summaryScore,
+                style: TextStyle(
+                  fontSize: Responsive.isFontSize(context, 18),
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              AnimatedTextKit(
+                animatedTexts: animatedText3,
+                isRepeatingAnimation: false,
               ),
             ],
           ),
 
-          SpaceSizedBox.verticalSpace(2.w)!,
+          SpaceSizedBox.verticalSpace(1.w)!,
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              ColorChageButton(
-                text: 'download cv',
-                onTap: () {
-                  html.window.open(resume, "pdf");
-                },
+              InkWell(
+                onTap: () => openURL(resume),
+                child: Container(
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 5, horizontal: 20),
+                  decoration: BoxDecoration(
+                      gradient: buttonGradi,
+                      // border: Border.all(
+                      //     width: 2.0, color: theme.primaryColor),
+                      borderRadius: BorderRadius.circular(10)),
+                  child: const Text(
+                    'download cv',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w500,
+                      color: textColor,
+                    ),
+                  ),
+                ),
               ),
               const EntranceFader(
                 offset: Offset(0, 0),
