@@ -32,7 +32,7 @@ class HomeDesktop extends StatelessWidget {
     ];
 
     return SizedBox(
-      height: 80.h,
+      height: 40.h,
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 10.w),
         child: Row(
@@ -56,7 +56,7 @@ class HomeDesktop extends StatelessWidget {
                           )),
                       EntranceFader(
                         offset: const Offset(0, 0),
-                        delay: const Duration(seconds: 2),
+                        delay: const Duration(milliseconds: 1500),
                         duration: const Duration(milliseconds: 800),
                         child: Image.asset(StaticImage.hi, height: 40),
                       ),

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/app/config/links.dart';
 import 'package:portfolio/app/config/strings.dart';
-import 'package:portfolio/app/core/util/constants.dart';
 import 'package:portfolio/app/pages/sections/skills/configs.dart';
 import 'package:portfolio/app/pages/widgets/custom_text_heading.dart';
 import 'package:sizer/sizer.dart';
@@ -20,13 +18,16 @@ class _SkillsDefaultState extends State<SkillsDefault> {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     var isNotEmpty = skillsUtils.isNotEmpty;
+    var sizedBox = SpaceSizedBox.verticalSpace(1.w)!;
+
     return Container(
       padding: EdgeInsets.symmetric(horizontal: size.width / 8),
       child: Column(
         children: [
           const CustomSectionHeading(text: "\nSkills"),
-          SpaceSizedBox.verticalSpace(1.w)!,
+          sizedBox,
           const CustomSectionSubHeading(text: skillsSubHeading),
+          sizedBox,
           if (isNotEmpty)
             Wrap(
               alignment: WrapAlignment.start,
@@ -40,43 +41,8 @@ class _SkillsDefaultState extends State<SkillsDefault> {
                   )
                   .toList(),
             ),
-          isNotEmpty ? Column(
-            children: [
-              SpaceSizedBox.verticalSpace(1.w)!,
-
-              OutlinedButton(
-                onPressed: () => openURL(gitHub),
-                child: const Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: Text(
-                    'See More',
-                    style: TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-              )
-            ],
-          ) : inProgressLabel(wipTag),
         ],
       ),
-    );
-  }
-
-  Widget inProgressLabel(String tag) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Column(
-            children: [
-              const CircularProgressIndicator(),
-              Text(tag,
-                  style: const TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.w100,
-                  )),
-            ],
-          ),
     );
   }
 }

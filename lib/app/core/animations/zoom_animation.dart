@@ -11,8 +11,8 @@ class ZoomAnimations extends StatefulWidget {
 
 class _ZoomAnimationsState extends State<ZoomAnimations>
     with TickerProviderStateMixin {
-  late AnimationController _controller;
-  late AnimationController _controller2;
+  late AnimationController _sizeController;
+  late AnimationController _avatarController;
   late final Animation<AlignmentGeometry> _alignAnimation;
   late Animation sizeAnimation;
 
@@ -20,18 +20,18 @@ class _ZoomAnimationsState extends State<ZoomAnimations>
   void initState() {
     super.initState();
 
-    _controller =
+    _sizeController =
         AnimationController(vsync: this, duration: const Duration(seconds: 4));
 
-    sizeAnimation = Tween(begin: 0.0, end: 0.2).animate(CurvedAnimation(
-        parent: _controller,
-        curve: const Interval(0.40, 0.75, curve: Curves.easeOut)));
-    _controller.forward();
-    _controller.addListener(() {
+    sizeAnimation = Tween(begin: 0.0, end: 0.15).animate(CurvedAnimation(
+        parent: _sizeController,
+        curve: const Interval(0.20, 0.75, curve: Curves.easeOut)));
+    _sizeController.forward();
+    _sizeController.addListener(() {
       setState(() {});
     });
     //
-    _controller2 = AnimationController(
+    _avatarController = AnimationController(
       duration: const Duration(milliseconds: 3000),
       vsync: this,
     )..repeat(reverse: true);
@@ -41,7 +41,7 @@ class _ZoomAnimationsState extends State<ZoomAnimations>
       end: Alignment.bottomCenter,
     ).animate(
       CurvedAnimation(
-        parent: _controller2,
+        parent: _avatarController,
         curve: Curves.easeInOutCubic,
       ),
     );
@@ -49,8 +49,8 @@ class _ZoomAnimationsState extends State<ZoomAnimations>
 
   @override
   void dispose() {
-    _controller.dispose();
-    _controller2.dispose();
+    _sizeController.dispose();
+    _avatarController.dispose();
     super.dispose();
   }
 
