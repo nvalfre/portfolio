@@ -31,7 +31,7 @@ class SkillsCardState extends State<SkillsCard> {
       onHover: handleHover,
       child: Container(
         margin: EdgeInsets.symmetric(horizontal: 0.5.w),
-        width: width * 0.1,
+        width: width * 0.18,
         height: height * 0.1,
         decoration: BoxDecoration(
           gradient: isHover ? greenCyan : grayBack,
